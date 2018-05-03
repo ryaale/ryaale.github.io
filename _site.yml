@@ -1,5 +1,5 @@
 name: my-website
-output_dir: "."
+output_dir: "docs"
 navbar:
   title: A. J. Ryan
   left:
