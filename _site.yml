@@ -1,4 +1,4 @@
-name: my-website
+name: "my-website"
 output_dir: "."
 navbar:
   title: A. J. Ryan
