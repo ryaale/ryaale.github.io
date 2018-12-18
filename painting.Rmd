@@ -2,4 +2,8 @@
 title: "Painting"
 ---
 
-some of my paintings
+A collection of some of my better paintings.
+
+Jim Morrison
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=c-ZAxYmq8Ds" frameborder="0" allowfullscreen></iframe>
