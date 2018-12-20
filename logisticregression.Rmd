@@ -1,0 +1,11 @@
+---
+title: "Logistic Regression"
+---
+
+The dependent variable (in this case $Y_i$) is binary in nature.
+
+Indepdent variables $(X_i)$ can be binary or continuous.
+
+$$Y_i = \frac{1}{1-e^{-X_i \beta}} + \epsilon_i$$
+
+Where $-\infty \lt x \lt \infty$, $y = 0, 1$

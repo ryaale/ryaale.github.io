@@ -3,10 +3,31 @@ output_dir: "."
 navbar:
   title: "Alexander Ryan"
   left:
-    - text: "Writing"
-      href: writing.html
+    - text: "Statistics"
+      href: statistics.html
+      menu:
+        - text: "Linear Regression"
+          href: linearregression.html
+        - text: "Logistic Regression"
+          href: logisticregression.html
+    - text: "Projects"
+      href: projects.html
+      menu:
+        - text: "Sentiment Analytics Web Application"
+          href: sentimentanalytics.html
+        - text: "Blablacar Mapping Visualization Application"
+          href: blablacarapp.html
+        - text: "Modelling Personality using the Big Five Factor Model"
+          href: semreport.html
+        - text: "Logistic model of Kidney Transplant success rate"
+          href: logisticreport.html
+        - text: "Measuring effectiveness of treatment for Epilepsy"
+          href: epilepsyreport.html
     - text: "Painting"
       href: painting.html
+    - text: "CV"
+      href: CV_Alexander_Ryan.pdf
+      
   right:
     - icon: fa-envelope fa-lg
       href: contact.html

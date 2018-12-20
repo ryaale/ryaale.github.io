@@ -2,8 +2,14 @@
 title: "Painting"
 ---
 
-A collection of some of my better paintings.
+A collection of some of my paintings.
 
-Jim Morrison
+Jim Morrison 2018
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=c-ZAxYmq8Ds" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c-ZAxYmq8Ds" frameborder="0" allowfullscreen></iframe>
+
+King Crimson - Album Cover 2018
+
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Falexjamesryan%2Fvideos%2F10214921584367045%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+

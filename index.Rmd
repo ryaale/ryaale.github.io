@@ -5,3 +5,11 @@
 
 <img src="images/alex-ryan.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
 
+I am a skilled Data Scientist and Product Manager. I am passionate about building awesome products, from ideation, to development, all the way through to deployment.
+
+I began my education at the University of Melbourne, with a Bachelor of Commerce, I majored in Finance, and I also picked up subjects in Economics, Programming and Statistics. During this time I worked on a few side projects, including a website for posting subject reviews. I learned that it is sometimes better to suffer a steep learning curve, than putting up with inadequate skills and tools, during the development of a project.
+
+During my studies I started working at the Melbourne Accelerator Program, a startup accelerator program run by the University of Melbourne, that provides seed investment funding for startups as well as educational events, designed to promote entrepreneurial ecosystem in Melbourne. I began as an intern, then as an Associate, working on a range of educational events. 
+
+
+You can find a copy of my resume [here](CV_Alexander_Ryan.pdf)

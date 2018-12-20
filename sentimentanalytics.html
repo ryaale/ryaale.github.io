@@ -11,7 +11,7 @@
 
 
 
-<title>Writing</title>
+<title>Sentiment Analytics Web Application</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -184,11 +184,50 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="writing.html">Writing</a>
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Statistics
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="linearregression.html">Linear Regression</a>
+    </li>
+    <li>
+      <a href="logisticregression.html">Logistic Regression</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Projects
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="sentimentanalytics.html">Sentiment Analytics Web Application</a>
+    </li>
+    <li>
+      <a href="blablacarapp.html">Blablacar Mapping Visualization Application</a>
+    </li>
+    <li>
+      <a href="semreport.html">Modelling Personality using the Big Five Factor Model</a>
+    </li>
+    <li>
+      <a href="logisticreport.html">Logistic model of Kidney Transplant success rate</a>
+    </li>
+    <li>
+      <a href="epilepsyreport.html">Measuring effectiveness of treatment for Epilepsy</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="painting.html">Painting</a>
+</li>
+<li>
+  <a href="CV_Alexander_Ryan.pdf">CV</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -225,12 +264,23 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Writing</h1>
+<h1 class="title toc-ignore">Sentiment Analytics Web Application</h1>
 
 </div>
 
 
-<p>Some of my writing</p>
+<p>Built a web application using Dash to compare the sentiment of Australian politicians from newspaper articles</p>
+<ul>
+<li>Used API to automatically retrieve online newspaper articles on Australian politicians</li>
+<li>These articles are stored onto a SQLite database</li>
+<li>Sentiment is derived using the vaderSentiment package in Python</li>
+<li>The application is built with Dash to graph the sentiment across time</li>
+</ul>
+<p>You can find a link to the application <a href="http://165.227.131.157/">here</a>.</p>
+<div class="figure">
+<img src="sentiment-app-screenshot.jpg" />
+
+</div>
 
 
 

@@ -1,0 +1,5 @@
+---
+title: "Logistic model of Kidney Transplant success rate"
+---
+
+Modeled the probability of Kidney Transplant success using Logistic Regression

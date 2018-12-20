@@ -1,0 +1,15 @@
+---
+title: "Blablacar Mapping Visualization Application"
+---
+
+Identified market need for visualizing the most convenient locations to pick-up and drop-off passengers in foreign cities using the Blablacar service.
+
+- Using Python and the Blablacar API, a dataset of 5000 pick-up/drop-off locations was built
+- Used Python for requesting trip data from Blablacar API
+- Built R Shiny application to visualize the clusters
+- A user can see the city they will be visiting, and find where it is most convenient to drop off passengers
+
+
+```{r echo=FALSE}
+knitr::include_app(url = "https://ryaale.shinyapps.io/map-shiny-app/")
+```

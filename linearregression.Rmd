@@ -1,0 +1,56 @@
+---
+title: "Linear Regression"
+---
+
+$$y = \beta_1 + \beta_2 X_2 + \beta_3 X_3 +...+ \beta_k X_k + \epsilon  $$
+
+‘y’ is the dependent variable to be estimated
+
+X are the independent variables
+
+ε is the error term
+
+βi’s are the regression coefficients
+
+### Assumptions of linear regression: 
+
+1. There must be a linear relation between independent and dependent variables. 
+2. There should not be any outliers present. 
+3. No heteroscedasticity 
+4. Sample observations should be independent. 
+5. Error terms should be normally distributed with mean 0 and constant variance. 
+6. Absence of multicollinearity and auto-correlation.
+
+### Estimating the parameters
+
+To estimate the regression coefficients βi’s we use principle of least squares which is to minimize the sum of squares due to the error term ε:
+
+$$Min \sum \epsilon^2 = Min \sum (y - (\beta_1 + \beta_2 X_2 + \beta_3 X_3 +...+ \beta_k X_k))^2$$
+
+Solving the above equation mathematically we obtain the regression coefficients:
+
+$$\hat \beta = (X'X)^{-1} X'y$$
+
+### Interpretation of regression coefficients
+
+For every unit change in the indepdent variables $(X_k)$ the dependent variable (y) will change by regression coefficient $(\beta_k)$
+
+### Calculating the Least Squares by hand
+
+#### Step 1: Calculate the mean of the x-values and the mean of the y-values:
+
+$$\bar X = \frac {\sum_{i=1}^{n} x_i}{n}  $$
+
+$$\bar Y = \frac {\sum_{i=1}^{n} y_i}{n}  $$
+
+#### Step 2: The following formula gives the slope of the line of best fit:
+
+$$ m = \frac {\sum_{i=1}^n (x_i - \bar X) (y_i - \bar Y)}{\sum_{i=1}^{n} (x_i - \bar X)^2}  $$
+
+#### Step 3: Compute the y-intercept of the line by using the formula:
+
+$$ b = \bar Y - m \bar X$$
+
+#### Step 4: Use the slope m and the y-intercept b to form the equation of the line:
+
+$$ y = m x + b$$

@@ -1,0 +1,5 @@
+---
+title: "Measuring effectiveness of treatment for Epilepsy"
+---
+
+Modeled number of seizures suffered by two patient groups  to determine the effectiveness of treatment, Progabide
