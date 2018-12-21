@@ -1,0 +1,43 @@
+---
+title: "Data Science Basic Tools"
+---
+
+The jounrye to become a data scientist can be daunting, especially with the broad array of content to learn. From highly technical knowledge in computer science, to a strong mathematical background, it requires a certain intellectual fortitude and love of learning. Which cannot be stressed enough, as a data scientist, you will never cease learning, that feeling of being lost in a sea of words, ideas and concepts that feel alien. But with the right mindset, one can build up their tower of knowledge, foundationally, one layer at a time. Starting with the absolute basics, the tools you will be using, can be a decent foray into this field. So, if you want to be a data scientist, here is a recommended list of the basic tools to not only learn, but drill in, so that you live and breath these techniques, imbue yourself with muscle memory.
+
+The following R packages are critical to know. Like the scapel, the paintbrush, the chefs knife, these are the critical tools that need to become like an extension of your arm, an extension of your mind:
+
+ggplot2
+dplyr
+tidyr
+lubridate
+stringr
+forcats
+readr
+
+What are the foundational data science skills in R?
+
+The following is a quick list:
+
+Basic visualizations: bar charts, line charts, histograms
+
+Manipulating colors in charts
+
+Visualization formatting (I.e., how to format your charts to make them look good)
+
+String manipulation
+
+Date manipulation
+
+Data reshaping (I.e., transforming from ‘wide’ format to ‘long’ format and visa-versa)
+
+Adding variables
+
+Removing variables
+
+Aggregating data
+
+Reading in data (from external sources)
+
+Working with factor variables (e.g., ordering factors, re-naming factor levels, re-categorizing factor variables, etc)
+
+This is a fairly high-level, list but it is a pretty good list of the things that you absolutely need to know. If you can’t do these, do not move on to more advanced topics. Don’t get shiny object syndrome. If you can’t do all of these skills, you need to go back and learn them right now.

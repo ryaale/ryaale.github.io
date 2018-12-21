@@ -2,6 +2,16 @@
 title: "Linear Regression"
 ---
 
+## Law of Large Numbers
+
+
+## Central Limit Theorem
+
+
+## Maximum Likelihood Estimation
+
+
+
 $$y = \beta_1 + \beta_2 X_2 + \beta_3 X_3 +...+ \beta_k X_k + \epsilon  $$
 
 ‘y’ is the dependent variable to be estimated

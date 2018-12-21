@@ -10,6 +10,12 @@ navbar:
           href: linearregression.html
         - text: "Logistic Regression"
           href: logisticregression.html
+        - text: "Sentiment Analysis with Python"
+          href: sentimentanalysis101.html
+        - text: "Data Science Basic Tools Overview"
+          href: datasciencebasictools.html
+        - text: "Data Science Interview Questions"
+          href: datascienceinterviewquestions.html
     - text: "Projects"
       href: projects.html
       menu:

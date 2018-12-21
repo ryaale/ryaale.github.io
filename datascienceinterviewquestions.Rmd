@@ -1,0 +1,189 @@
+---
+title: "Data Science Interview Questions (and Answers)"
+---
+
+Preparation for a data scientist interview can be challenging. It seems the questions can come from a infinite chain, from a vast collection of content. But the important part to remember this list is finite, and can be gamed. By learning these questions, you will imbue yourself with the foundational structure, you will be learning what is important to the field.
+
+# Statistics
+
+Name a probability distribution other than Normal and explain how to apply this probability?
+
+How best to select a representative sample of search queries from 5 million?
+
+The mean heights of men and women in a population were calculated to be mM and mW. What is the mean height of the total population?
+
+Three friends in Seattle told you it’s rainy. Each has a probability of 1/3 of lying. What’s the probability of Seattle is rainy?
+
+How do you detect if a new observation is an outlier?
+
+What is the Central Limit Theorem? Why it's important?
+
+Explain the difference between mean and median.
+
+Define variance.
+
+What is covariance? Where is it used?
+
+What is the goal of A/B Testing?
+
+What is sampling? Why we need it? What is stratified sampling?
+
+# Programming Challenges
+
+Find all palindromic substrings in a given string.
+
+How would you check if a linked list has cycles?
+
+Merge k (in this case k=2) arrays and sort them.
+
+Find max sum subsequence from a sequence of integers.
+
+Create a function that checks if a word is a palindrome.
+
+You have a ‘csv’ file with ID and Quantity columns, it doesn't fit in memory. Write a program in any language of your choice to aggregate the Quantity column.
+
+Given a list A of objects and another list B which is identical to A except that one element is removed, find the removed element.
+
+Given a list of integers (positive & negative), write an algorithm to find whether there’s at least a pair of integers that sum up to zero.
+
+# Assorted Data Science Questions
+
+What are your go-to packages? (scikit-learn, xgboost, Pandas, numpy/scipy, Keras, matplotlib)
+
+What techniques do you use to fine-tune hyperparameters? (Cross-validation, grid-search, random-search, tree of Parzen estimators, Bayesian optimization.)
+
+How to quickly find if a text contains one of a million substrings. (Prefix trees.)
+
+Explain word embeddings. How are they learned?
+
+What is Stochastic Gradient Descent. Describe it in your own words?
+
+Explain the difference between Gradient Descent and Stochastic Gradient Descent. When use which?
+
+How can dropout be useful in a neural network?
+
+Explain Batch Normalization. What benefit does it bring?
+
+What is the use for a 1x1 convolution?
+
+How to represent a text document for machine learning?
+
+How to predict the next value in a time series?
+
+How to measure the similarity of two words or two documents?
+
+You have a search engine. How would you generate related searches for a query?
+
+How would you suggest followers on Twitter?
+
+What are support vectors in Support Vector Machines?
+
+What's the difference between Logistic Regression and SVM?
+
+When training an SVM, what value are you optimizing for?
+
+What is an unbalanced classification problem and how to deal with it?
+
+What is data wrangling? Explain its main steps.
+
+What would you do to summarize a Twitter feed?
+
+Explain the problem of vanishing gradient. How to deal with it?
+
+Explain the problem of exploding gradient. How to deal with it?
+
+Explain the need of the bias term.
+
+Explain the difference between unsupervised, semi-supervised and self-supervised learning.
+
+How Generative Adversarial Neural Networks (GANs) work?
+
+What is an auto-encoder? Why do we "auto-encode" something?
+
+What is a variational auto-encoder? Where can it be useful?
+
+When do we use sigmoid for an output function? What is the problem with sigmoid during backpropagation?
+
+What is transfer learning? How to do it in neural networks?
+
+How to combine two different kinds of input (ex: image and text or sequence and vector) in a neural network?
+
+How to make a neural network predict two different kinds of output?
+
+How does a logistic regression model know what the optimal coefficients are?
+
+Why use feature selection? What are the main techniques of feature selection?
+
+Explain ensemble learning. What techniques do you know?
+
+Why are ensemble methods superior to individual models?
+
+Explain bagging.
+
+Explain boosting.
+
+How to combine predictions of several different learning algorithms?
+
+Explain the difference between parametric and non-parametric models?
+
+Why SVM doesn't give a probabilistic output? Can we make transform it to get probabilities?
+
+How to build a multiclass classifier? Name two different strategies.
+
+How to build a multilabel classifier?
+
+What’s the trade-off between bias and variance?
+
+How is KNN different from k-means?
+
+What is the difference between hard and soft clustering?
+
+Define precision and recall.
+
+State the Bayes Theorem? Why it's so important?
+
+How AlphaGo/AlphaZero work?
+
+Why Naive Bayes is called "naive"?
+
+What’s the difference between a generative and discriminative model?
+
+How do you handle missing or corrupted data in a dataset?
+
+How to measure the difference between two probability distributions?
+
+What is cross-entropy? How is it useful in Machine Learning?
+
+How to detect outliers?
+
+Explain the difference between a test set and a validation set.
+
+What is a confidence interval and why is it useful?
+
+What is the difference between statistical independence and correlation?
+
+What is conditional probability? What is Bayes’ Theorem? Why is it useful in practice?
+
+Suppose we are training a model using a particular optimization procedure such as stochastic gradient descent. How do we know if we are converging to a solution? If a training procedure converges will it always result in the best possible solution?
+
+How do we know if we have collected enough data to train a model?
+
+Explain why we have training, test and validation data sets and how they are used effectively?
+
+What is clustering? Give an example algorithm that performs clustering. How can we know whether we obtained decent clusters? How might we estimate a good number of clusters to use with our data?
+
+We often say that correlation does not imply causation. What does this mean?
+
+What is the difference between unsupervised and supervised learning?
+
+What is the difference between regression and classification?
+
+What do we mean when we talk about the bias-variance tradeoff in statistical models?
+
+What is over-fitting? How is this related to the bias-variance trade-off? What is regularization? Give some examples of regularization in models.
+
+Suppose we want to train a binary classifier and one class is very rare. Give an example of such a problem. How should we train this model? What metrics should we use to measure performance?
+
+How many unique subsets of n different objects can we make?
+
+How would you build a data-driven recommender system? What are the limitations of this approach?
