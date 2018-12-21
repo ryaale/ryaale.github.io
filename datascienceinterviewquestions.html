@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Data Science Interview Questions (and Answers)</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Alexander Ryan</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Statistics
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="linearregression.html">Linear Regression</a>
+    </li>
+    <li>
+      <a href="logisticregression.html">Logistic Regression</a>
+    </li>
+    <li>
+      <a href="sentimentanalysis101.html">Sentiment Analysis with Python</a>
+    </li>
+    <li>
+      <a href="datasciencebasictools.html">Data Science Basic Tools Overview</a>
+    </li>
+    <li>
+      <a href="datascienceinterviewquestions.html">Data Science Interview Questions</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Projects
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="sentimentanalytics.html">Sentiment Analytics Web Application</a>
+    </li>
+    <li>
+      <a href="blablacarapp.html">Blablacar Mapping Visualization Application</a>
+    </li>
+    <li>
+      <a href="semreport.html">Modelling Personality using the Big Five Factor Model</a>
+    </li>
+    <li>
+      <a href="logisticreport.html">Logistic model of Kidney Transplant success rate</a>
+    </li>
+    <li>
+      <a href="epilepsyreport.html">Measuring effectiveness of treatment for Epilepsy</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="painting.html">Painting</a>
+</li>
+<li>
+  <a href="CV_Alexander_Ryan.pdf">CV</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="contact.html">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/ryaale">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/bon_dilettante">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/alexander-j-ryan/">
+    <span class="fa fa-linkedin fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Data Science Interview Questions (and Answers)</h1>
+
+</div>
+
+
+<p>Preparation for a data scientist interview can be challenging. It seems the questions can come from a infinite chain, from a vast collection of content. But the important part to remember this list is finite, and can be gamed. By learning these questions, you will imbue yourself with the foundational structure, you will be learning what is important to the field.</p>
+<div id="statistics" class="section level1">
+<h1>Statistics</h1>
+<p>Name a probability distribution other than Normal and explain how to apply this probability?</p>
+<p>How best to select a representative sample of search queries from 5 million?</p>
+<p>The mean heights of men and women in a population were calculated to be mM and mW. What is the mean height of the total population?</p>
+<p>Three friends in Seattle told you it’s rainy. Each has a probability of 1/3 of lying. What’s the probability of Seattle is rainy?</p>
+<p>How do you detect if a new observation is an outlier?</p>
+<p>What is the Central Limit Theorem? Why it’s important?</p>
+<p>Explain the difference between mean and median.</p>
+<p>Define variance.</p>
+<p>What is covariance? Where is it used?</p>
+<p>What is the goal of A/B Testing?</p>
+<p>What is sampling? Why we need it? What is stratified sampling?</p>
+</div>
+<div id="programming-challenges" class="section level1">
+<h1>Programming Challenges</h1>
+<p>Find all palindromic substrings in a given string.</p>
+<p>How would you check if a linked list has cycles?</p>
+<p>Merge k (in this case k=2) arrays and sort them.</p>
+<p>Find max sum subsequence from a sequence of integers.</p>
+<p>Create a function that checks if a word is a palindrome.</p>
+<p>You have a ‘csv’ file with ID and Quantity columns, it doesn’t fit in memory. Write a program in any language of your choice to aggregate the Quantity column.</p>
+<p>Given a list A of objects and another list B which is identical to A except that one element is removed, find the removed element.</p>
+<p>Given a list of integers (positive &amp; negative), write an algorithm to find whether there’s at least a pair of integers that sum up to zero.</p>
+</div>
+<div id="assorted-data-science-questions" class="section level1">
+<h1>Assorted Data Science Questions</h1>
+<p>What are your go-to packages? (scikit-learn, xgboost, Pandas, numpy/scipy, Keras, matplotlib)</p>
+<p>What techniques do you use to fine-tune hyperparameters? (Cross-validation, grid-search, random-search, tree of Parzen estimators, Bayesian optimization.)</p>
+<p>How to quickly find if a text contains one of a million substrings. (Prefix trees.)</p>
+<p>Explain word embeddings. How are they learned?</p>
+<p>What is Stochastic Gradient Descent. Describe it in your own words?</p>
+<p>Explain the difference between Gradient Descent and Stochastic Gradient Descent. When use which?</p>
+<p>How can dropout be useful in a neural network?</p>
+<p>Explain Batch Normalization. What benefit does it bring?</p>
+<p>What is the use for a 1x1 convolution?</p>
+<p>How to represent a text document for machine learning?</p>
+<p>How to predict the next value in a time series?</p>
+<p>How to measure the similarity of two words or two documents?</p>
+<p>You have a search engine. How would you generate related searches for a query?</p>
+<p>How would you suggest followers on Twitter?</p>
+<p>What are support vectors in Support Vector Machines?</p>
+<p>What’s the difference between Logistic Regression and SVM?</p>
+<p>When training an SVM, what value are you optimizing for?</p>
+<p>What is an unbalanced classification problem and how to deal with it?</p>
+<p>What is data wrangling? Explain its main steps.</p>
+<p>What would you do to summarize a Twitter feed?</p>
+<p>Explain the problem of vanishing gradient. How to deal with it?</p>
+<p>Explain the problem of exploding gradient. How to deal with it?</p>
+<p>Explain the need of the bias term.</p>
+<p>Explain the difference between unsupervised, semi-supervised and self-supervised learning.</p>
+<p>How Generative Adversarial Neural Networks (GANs) work?</p>
+<p>What is an auto-encoder? Why do we “auto-encode” something?</p>
+<p>What is a variational auto-encoder? Where can it be useful?</p>
+<p>When do we use sigmoid for an output function? What is the problem with sigmoid during backpropagation?</p>
+<p>What is transfer learning? How to do it in neural networks?</p>
+<p>How to combine two different kinds of input (ex: image and text or sequence and vector) in a neural network?</p>
+<p>How to make a neural network predict two different kinds of output?</p>
+<p>How does a logistic regression model know what the optimal coefficients are?</p>
+<p>Why use feature selection? What are the main techniques of feature selection?</p>
+<p>Explain ensemble learning. What techniques do you know?</p>
+<p>Why are ensemble methods superior to individual models?</p>
+<p>Explain bagging.</p>
+<p>Explain boosting.</p>
+<p>How to combine predictions of several different learning algorithms?</p>
+<p>Explain the difference between parametric and non-parametric models?</p>
+<p>Why SVM doesn’t give a probabilistic output? Can we make transform it to get probabilities?</p>
+<p>How to build a multiclass classifier? Name two different strategies.</p>
+<p>How to build a multilabel classifier?</p>
+<p>What’s the trade-off between bias and variance?</p>
+<p>How is KNN different from k-means?</p>
+<p>What is the difference between hard and soft clustering?</p>
+<p>Define precision and recall.</p>
+<p>State the Bayes Theorem? Why it’s so important?</p>
+<p>How AlphaGo/AlphaZero work?</p>
+<p>Why Naive Bayes is called “naive”?</p>
+<p>What’s the difference between a generative and discriminative model?</p>
+<p>How do you handle missing or corrupted data in a dataset?</p>
+<p>How to measure the difference between two probability distributions?</p>
+<p>What is cross-entropy? How is it useful in Machine Learning?</p>
+<p>How to detect outliers?</p>
+<p>Explain the difference between a test set and a validation set.</p>
+<p>What is a confidence interval and why is it useful?</p>
+<p>What is the difference between statistical independence and correlation?</p>
+<p>What is conditional probability? What is Bayes’ Theorem? Why is it useful in practice?</p>
+<p>Suppose we are training a model using a particular optimization procedure such as stochastic gradient descent. How do we know if we are converging to a solution? If a training procedure converges will it always result in the best possible solution?</p>
+<p>How do we know if we have collected enough data to train a model?</p>
+<p>Explain why we have training, test and validation data sets and how they are used effectively?</p>
+<p>What is clustering? Give an example algorithm that performs clustering. How can we know whether we obtained decent clusters? How might we estimate a good number of clusters to use with our data?</p>
+<p>We often say that correlation does not imply causation. What does this mean?</p>
+<p>What is the difference between unsupervised and supervised learning?</p>
+<p>What is the difference between regression and classification?</p>
+<p>What do we mean when we talk about the bias-variance tradeoff in statistical models?</p>
+<p>What is over-fitting? How is this related to the bias-variance trade-off? What is regularization? Give some examples of regularization in models.</p>
+<p>Suppose we want to train a binary classifier and one class is very rare. Give an example of such a problem. How should we train this model? What metrics should we use to measure performance?</p>
+<p>How many unique subsets of n different objects can we make?</p>
+<p>How would you build a data-driven recommender system? What are the limitations of this approach?</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

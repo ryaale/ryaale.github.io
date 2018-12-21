@@ -11,7 +11,7 @@
 
 
 
-<title>Linear Regression</title>
+<title>Sentiment Analysis</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -273,65 +273,55 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Linear Regression</h1>
+<h1 class="title toc-ignore">Sentiment Analysis</h1>
 
 </div>
 
 
-<div id="law-of-large-numbers" class="section level2">
-<h2>Law of Large Numbers</h2>
-</div>
-<div id="central-limit-theorem" class="section level2">
-<h2>Central Limit Theorem</h2>
-</div>
-<div id="maximum-likelihood-estimation" class="section level2">
-<h2>Maximum Likelihood Estimation</h2>
-<p><span class="math display">\[y = \beta_1 + \beta_2 X_2 + \beta_3 X_3 +...+ \beta_k X_k + \epsilon  \]</span></p>
-<p>‘y’ is the dependent variable to be estimated</p>
-<p>X are the independent variables</p>
-<p>ε is the error term</p>
-<p>βi’s are the regression coefficients</p>
-<div id="assumptions-of-linear-regression" class="section level3">
-<h3>Assumptions of linear regression:</h3>
-<ol style="list-style-type: decimal">
-<li>There must be a linear relation between independent and dependent variables.</li>
-<li>There should not be any outliers present.</li>
-<li>No heteroscedasticity</li>
-<li>Sample observations should be independent.</li>
-<li>Error terms should be normally distributed with mean 0 and constant variance.</li>
-<li>Absence of multicollinearity and auto-correlation.</li>
-</ol>
-</div>
-<div id="estimating-the-parameters" class="section level3">
-<h3>Estimating the parameters</h3>
-<p>To estimate the regression coefficients βi’s we use principle of least squares which is to minimize the sum of squares due to the error term ε:</p>
-<p><span class="math display">\[Min \sum \epsilon^2 = Min \sum (y - (\beta_1 + \beta_2 X_2 + \beta_3 X_3 +...+ \beta_k X_k))^2\]</span></p>
-<p>Solving the above equation mathematically we obtain the regression coefficients:</p>
-<p><span class="math display">\[\hat \beta = (X&#39;X)^{-1} X&#39;y\]</span></p>
-</div>
-<div id="interpretation-of-regression-coefficients" class="section level3">
-<h3>Interpretation of regression coefficients</h3>
-<p>For every unit change in the indepdent variables <span class="math inline">\((X_k)\)</span> the dependent variable (y) will change by regression coefficient <span class="math inline">\((\beta_k)\)</span></p>
-</div>
-<div id="calculating-the-least-squares-by-hand" class="section level3">
-<h3>Calculating the Least Squares by hand</h3>
-<div id="step-1-calculate-the-mean-of-the-x-values-and-the-mean-of-the-y-values" class="section level4">
-<h4>Step 1: Calculate the mean of the x-values and the mean of the y-values:</h4>
-<p><span class="math display">\[\bar X = \frac {\sum_{i=1}^{n} x_i}{n}  \]</span></p>
-<p><span class="math display">\[\bar Y = \frac {\sum_{i=1}^{n} y_i}{n}  \]</span></p>
-</div>
-<div id="step-2-the-following-formula-gives-the-slope-of-the-line-of-best-fit" class="section level4">
-<h4>Step 2: The following formula gives the slope of the line of best fit:</h4>
-<p><span class="math display">\[ m = \frac {\sum_{i=1}^n (x_i - \bar X) (y_i - \bar Y)}{\sum_{i=1}^{n} (x_i - \bar X)^2}  \]</span></p>
-</div>
-<div id="step-3-compute-the-y-intercept-of-the-line-by-using-the-formula" class="section level4">
-<h4>Step 3: Compute the y-intercept of the line by using the formula:</h4>
-<p><span class="math display">\[ b = \bar Y - m \bar X\]</span></p>
-</div>
-<div id="step-4-use-the-slope-m-and-the-y-intercept-b-to-form-the-equation-of-the-line" class="section level4">
-<h4>Step 4: Use the slope m and the y-intercept b to form the equation of the line:</h4>
-<p><span class="math display">\[ y = m x + b\]</span></p>
-</div>
+<div id="tools" class="section level2">
+<h2>Tools</h2>
+<p>We are using the TextBlob function from the textblob package</p>
+<p>polarity is the sentiment itself, ranging from a -1 to a +1</p>
+<p>subjectivity is a measure of the sentiment being objective to subjective, and goes from 0 to 1</p>
+<p>We would want to see sentiment that is objective rather than subjective, so a lower score should likely denote a more likely-to-be-accurate reading.</p>
+<div id="definitions-of-speech-tags" class="section level3">
+<h3>Definitions of Speech tags</h3>
+<p>POS tag list:</p>
+<p>CC = coordinating conjunction<br />
+CD = cardinal digit<br />
+DT = determiner<br />
+EX = existential there (like: “there is” … think of it like “there exists”)<br />
+FW = foreign word<br />
+IN = preposition/subordinating conjunction<br />
+JJ = adjective ‘big’<br />
+JJR = adjective, comparative ‘bigger’<br />
+JJS = adjective, superlative ‘biggest’<br />
+LS = list marker (1)<br />
+MD = modal could, will<br />
+NN = noun, singular ‘desk’<br />
+NNS = noun plural ‘desks’<br />
+NNP = proper noun, singular ‘Harrison’<br />
+NNPS = proper noun, plural ‘Americans’<br />
+PDT = predeterminer ‘all the kids’<br />
+POS = possessive ending parent's<br />
+PRP = personal pronoun I, he, she<br />
+PRP$ = possessive pronoun my, his, hers<br />
+RB = adverb very, silently,<br />
+RBR = adverb, comparative better<br />
+RBS = adverb, superlative best<br />
+RP = particle give up<br />
+TO = to go ‘to’ the store.<br />
+UH = interjection errrrrrrrm<br />
+VB = verb, base form take<br />
+VBD = verb, past tense took<br />
+VBG = verb, gerund/present participle taking<br />
+VBN = verb, past participle taken<br />
+VBP = verb, sing. present, non-3d take<br />
+VBZ = verb, 3rd person sing. present takes<br />
+WDT = wh-determiner which<br />
+WP = wh-pronoun who, what<br />
+WP$ = possessive wh-pronoun whose<br />
+WRB = wh-abverb where, when</p>
 </div>
 </div>
 

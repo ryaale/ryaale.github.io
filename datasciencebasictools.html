@@ -11,7 +11,7 @@
 
 
 
-<title>Linear Regression</title>
+<title>Data Science Basic Tools</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -273,67 +273,28 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Linear Regression</h1>
+<h1 class="title toc-ignore">Data Science Basic Tools</h1>
 
 </div>
 
 
-<div id="law-of-large-numbers" class="section level2">
-<h2>Law of Large Numbers</h2>
-</div>
-<div id="central-limit-theorem" class="section level2">
-<h2>Central Limit Theorem</h2>
-</div>
-<div id="maximum-likelihood-estimation" class="section level2">
-<h2>Maximum Likelihood Estimation</h2>
-<p><span class="math display">\[y = \beta_1 + \beta_2 X_2 + \beta_3 X_3 +...+ \beta_k X_k + \epsilon  \]</span></p>
-<p>‘y’ is the dependent variable to be estimated</p>
-<p>X are the independent variables</p>
-<p>ε is the error term</p>
-<p>βi’s are the regression coefficients</p>
-<div id="assumptions-of-linear-regression" class="section level3">
-<h3>Assumptions of linear regression:</h3>
-<ol style="list-style-type: decimal">
-<li>There must be a linear relation between independent and dependent variables.</li>
-<li>There should not be any outliers present.</li>
-<li>No heteroscedasticity</li>
-<li>Sample observations should be independent.</li>
-<li>Error terms should be normally distributed with mean 0 and constant variance.</li>
-<li>Absence of multicollinearity and auto-correlation.</li>
-</ol>
-</div>
-<div id="estimating-the-parameters" class="section level3">
-<h3>Estimating the parameters</h3>
-<p>To estimate the regression coefficients βi’s we use principle of least squares which is to minimize the sum of squares due to the error term ε:</p>
-<p><span class="math display">\[Min \sum \epsilon^2 = Min \sum (y - (\beta_1 + \beta_2 X_2 + \beta_3 X_3 +...+ \beta_k X_k))^2\]</span></p>
-<p>Solving the above equation mathematically we obtain the regression coefficients:</p>
-<p><span class="math display">\[\hat \beta = (X&#39;X)^{-1} X&#39;y\]</span></p>
-</div>
-<div id="interpretation-of-regression-coefficients" class="section level3">
-<h3>Interpretation of regression coefficients</h3>
-<p>For every unit change in the indepdent variables <span class="math inline">\((X_k)\)</span> the dependent variable (y) will change by regression coefficient <span class="math inline">\((\beta_k)\)</span></p>
-</div>
-<div id="calculating-the-least-squares-by-hand" class="section level3">
-<h3>Calculating the Least Squares by hand</h3>
-<div id="step-1-calculate-the-mean-of-the-x-values-and-the-mean-of-the-y-values" class="section level4">
-<h4>Step 1: Calculate the mean of the x-values and the mean of the y-values:</h4>
-<p><span class="math display">\[\bar X = \frac {\sum_{i=1}^{n} x_i}{n}  \]</span></p>
-<p><span class="math display">\[\bar Y = \frac {\sum_{i=1}^{n} y_i}{n}  \]</span></p>
-</div>
-<div id="step-2-the-following-formula-gives-the-slope-of-the-line-of-best-fit" class="section level4">
-<h4>Step 2: The following formula gives the slope of the line of best fit:</h4>
-<p><span class="math display">\[ m = \frac {\sum_{i=1}^n (x_i - \bar X) (y_i - \bar Y)}{\sum_{i=1}^{n} (x_i - \bar X)^2}  \]</span></p>
-</div>
-<div id="step-3-compute-the-y-intercept-of-the-line-by-using-the-formula" class="section level4">
-<h4>Step 3: Compute the y-intercept of the line by using the formula:</h4>
-<p><span class="math display">\[ b = \bar Y - m \bar X\]</span></p>
-</div>
-<div id="step-4-use-the-slope-m-and-the-y-intercept-b-to-form-the-equation-of-the-line" class="section level4">
-<h4>Step 4: Use the slope m and the y-intercept b to form the equation of the line:</h4>
-<p><span class="math display">\[ y = m x + b\]</span></p>
-</div>
-</div>
-</div>
+<p>The jounrye to become a data scientist can be daunting, especially with the broad array of content to learn. From highly technical knowledge in computer science, to a strong mathematical background, it requires a certain intellectual fortitude and love of learning. Which cannot be stressed enough, as a data scientist, you will never cease learning, that feeling of being lost in a sea of words, ideas and concepts that feel alien. But with the right mindset, one can build up their tower of knowledge, foundationally, one layer at a time. Starting with the absolute basics, the tools you will be using, can be a decent foray into this field. So, if you want to be a data scientist, here is a recommended list of the basic tools to not only learn, but drill in, so that you live and breath these techniques, imbue yourself with muscle memory.</p>
+<p>The following R packages are critical to know. Like the scapel, the paintbrush, the chefs knife, these are the critical tools that need to become like an extension of your arm, an extension of your mind:</p>
+<p>ggplot2 dplyr tidyr lubridate stringr forcats readr</p>
+<p>What are the foundational data science skills in R?</p>
+<p>The following is a quick list:</p>
+<p>Basic visualizations: bar charts, line charts, histograms</p>
+<p>Manipulating colors in charts</p>
+<p>Visualization formatting (I.e., how to format your charts to make them look good)</p>
+<p>String manipulation</p>
+<p>Date manipulation</p>
+<p>Data reshaping (I.e., transforming from ‘wide’ format to ‘long’ format and visa-versa)</p>
+<p>Adding variables</p>
+<p>Removing variables</p>
+<p>Aggregating data</p>
+<p>Reading in data (from external sources)</p>
+<p>Working with factor variables (e.g., ordering factors, re-naming factor levels, re-categorizing factor variables, etc)</p>
+<p>This is a fairly high-level, list but it is a pretty good list of the things that you absolutely need to know. If you can’t do these, do not move on to more advanced topics. Don’t get shiny object syndrome. If you can’t do all of these skills, you need to go back and learn them right now.</p>
 
 
 
