@@ -2,11 +2,13 @@
 title: "Data Science Interview Questions (and Answers)"
 ---
 
-Preparation for a data scientist interview can be challenging. It seems the questions can come from a infinite chain, from a vast collection of content, in a variety of different subfields. But the important part to remember this list is finite, and can be gamed. By learning these questions, you will imbue yourself with the foundational structure of data science, you will be learning what is important to the field.
+Preparation for a data scientist interview can be challenging. It seems the questions can come from a infinite chain, from a vast collection of content, in a variety of different subfields. But the important part to remember this list is finite, and can be gamed. By learning these questions, you will imbue yourself with the foundational structure of data science, you will be learning what is important to the field, and the avenues to further explore.
 
-# Statistics
+### Statistics
 
 Name a probability distribution other than Normal and explain how to apply this probability?
+
+Explain p-value in terms that someone unfamiliar with statistics can understand.
 
 How best to select a representative sample of search queries from 5 million?
 
@@ -28,7 +30,7 @@ What is the goal of A/B Testing?
 
 What is sampling? Why we need it? What is stratified sampling?
 
-# Programming Challenges
+### Programming Challenges
 
 Find all palindromic substrings in a given string.
 
@@ -46,7 +48,7 @@ Given a list A of objects and another list B which is identical to A except that
 
 Given a list of integers (positive & negative), write an algorithm to find whether there’s at least a pair of integers that sum up to zero.
 
-# Assorted Data Science Questions
+### Assorted Data Science Questions
 
 What are your go-to packages? (scikit-learn, xgboost, Pandas, numpy/scipy, Keras, matplotlib)
 

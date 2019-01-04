@@ -1,5 +1,4 @@
 ---
-title: "Writing"
+title: "Projects"
 ---
 
-Some of my writing

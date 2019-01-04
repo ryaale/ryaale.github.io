@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
   title: "Alexander Ryan"
   left:
-    - text: "Statistics"
+    - text: "Statistics"  
       href: statistics.html
       menu:
         - text: "Linear Regression"

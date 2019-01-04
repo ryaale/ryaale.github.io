@@ -2,13 +2,13 @@
 title: "Linear Regression"
 ---
 
-## Law of Large Numbers
+#### Law of Large Numbers
 
 
-## Central Limit Theorem
+#### Central Limit Theorem
 
 
-## Maximum Likelihood Estimation
+#### Maximum Likelihood Estimation
 
 
 

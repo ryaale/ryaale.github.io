@@ -2,5 +2,5 @@
 title: "Contact"
 ---
 
-Alexander Ryan
+Alexander Ryan  
 alexanderjamesryan@gmail.com

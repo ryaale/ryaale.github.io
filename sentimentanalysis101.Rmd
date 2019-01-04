@@ -2,7 +2,7 @@
 title: "Sentiment Analysis"
 ---
 
-## Tools
+### Tools
 
 We are using the TextBlob function from the textblob package
 
