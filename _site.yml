@@ -3,19 +3,19 @@ output_dir: "."
 navbar:
   title: "Alexander Ryan"
   left:
-    - text: "Statistics"  
-      href: statistics.html
-      menu:
-        - text: "Linear Regression"
-          href: linearregression.html
-        - text: "Logistic Regression"
-          href: logisticregression.html
-        - text: "Sentiment Analysis with Python"
-          href: sentimentanalysis101.html
-        - text: "Data Science Basic Tools Overview"
-          href: datasciencebasictools.html
-        - text: "Data Science Interview Questions"
-          href: datascienceinterviewquestions.html
+    #- text: "Statistics"  
+    #  href: statistics.html
+    #  menu:
+    #    - text: "Linear Regression"
+    #      href: linearregression.html
+    #    - text: "Logistic Regression"
+    #      href: logisticregression.html
+    #    - text: "Sentiment Analysis with Python"
+    #      href: sentimentanalysis101.html
+    #    - text: "Data Science Basic Tools Overview"
+    #      href: datasciencebasictools.html
+    #    - text: "Data Science Interview Questions"
+    #      href: datascienceinterviewquestions.html
     - text: "Projects"
       href: projects.html
       menu:

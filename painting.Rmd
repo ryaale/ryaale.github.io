@@ -2,12 +2,39 @@
 title: "A collection of some of my Paintings"
 ---
 
-**Jim Morrison 2018**
+**Jim Morrison of The Doors (2018)**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c-ZAxYmq8Ds" frameborder="0" allowfullscreen></iframe>
 
-**King Crimson - Album Cover 2018**
+**King Crimson - Album Cover (2018)**
 
 <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Falexjamesryan%2Fvideos%2F10214921584367045%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+**Albert Camus - Portrait (2017)**
+
+<img src="images/albert-camus.png" alt="Albert Camus (2017)" style="width:400px;"/>
+
+**David Foster Wallace - Portrait (2017)**
+
+<img src="images/david-foster-wallace.jpeg" alt="David Foster Wallace (2017)" style="width:400px;"/>
+
+
+**Jack Nickolson - Portrait (2017)**
+
+<img src="images/jack-nickolson.png" alt="Jack Nickolson (2017)" style="width:400px;"/>
+
+
+
+**Philip K. Dick - Portrait (2017)**
+
+<img src="images/philip-k-dick.png" alt="Philip K. Dick (2017)" style="width:400px;"/>
+
+**Swimming (2017)**
+
+<img src="images/swimming.png" alt="Swimming (2017)" style="width:400px;"/>
+
+
+
+
 
 
